@@ -1,0 +1,109 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Kaushan+Script&family=Satisfy&display=swap');
+
+body {
+    margin: 0;
+    padding: 2em;
+    font-family: sans-serif;
+    background-color: rgb(51, 51, 51);
+    color: #fff;
+    text-align: center;
+    font-family: 'Kaushan Script', cursive;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 2em;
+    color: rgb(255, 255, 255);
+}
+
+.units {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5em;
+    flex-wrap: wrap;
+}
+
+.panel {
+    border-radius: 20px;
+    box-shadow:
+        0 4px 15px rgba(0, 0, 0, 0.15);
+    min-width: 15em;
+    height: 13em;
+    position: relative;
+}
+
+.panel:nth-child(1) {
+    background: #af1d5a;
+}
+
+.panel:nth-child(2) {
+    background: #4070ff;
+}
+
+.panel:nth-child(3) {
+    background: #62ff24;
+}
+
+.panel:nth-child(1):hover,
+.panel:nth-child(2):hover,
+.panel:nth-child(3):hover {
+    opacity: 0.6;
+}
+
+.symbol {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 10em;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.panel:nth-child(1) .symbol {
+    color: #cf224b;
+}
+
+.panel:nth-child(2) .symbol {
+    color: #537eff;
+}
+
+.panel:nth-child(3) .symbol {
+    color: #7ffc4e;
+}
+
+.panel h2,
+.panel input {
+    position: relative;
+    font-family: 'Baloo Bhai 2', cursive;
+}
+
+.panel h2 {
+    text-align: left;
+    padding-left: 1em;
+    /* font-size: ; */
+}
+
+.panel input::-webkit-outer-spin-button,
+.panel input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.panel input {
+    border: none;
+    background: none;
+    margin-top: 0.5em;
+    width: 4em;
+    height: 2em;
+    font-size: 3em;
+    font-weight: 600;
+    text-align: center;
+    color: #fff;
+}
+
+.panel input:focus {
+    outline: none;
+}
